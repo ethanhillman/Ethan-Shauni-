@@ -10,11 +10,23 @@
         <header>
             <h1>Ethan & Shauni ❤️</h1>
         </header>
+
+        <!-- Hero banner to use space under the title and highlight the Anniversary -->
+        <div class="hero" role="region" aria-label="Anniversary hero">
+          <div class="hero-inner">
+            <div class="hero-badge">
+              <span class="badge-title">Anniversary</span>
+              <span id="heroDate" class="badge-date">Jan 18, 2026</span>
+            </div>
+            <p class="hero-sub">Two hearts, one journey</p>
+          </div>
+        </div>
+
 <main>
     <section id="countdown" aria-live="polite">
       <div id="timer">0d 00:00:00</div>
-      <label for="startDate">Anniversary</label>
-      <input id="startDate" type="date" value="2026-01-18">
+      <label for="startDate" class="ann-label">Anniversary</label>
+      <input id="startDate" type="date" value="2026-01-18" disabled aria-disabled="true">
     </section>
 
     <section id="about">
@@ -30,10 +42,15 @@
     <section id="gallery" aria-label="Gallery">
       <h2>Memories</h2>
       <div id="photoList" role="list"></div>
-      </section>
+    </section>
+
+    <section id="live" aria-label="Live Action">
       <h2>Live Action</h2>
-<input id="videos" type="file" accept="video/*" multiple>
-<div id="videoList" role="list"></div>
-    </body>
-    <script src="script.js" defer></script>
+      <div id="videoList" role="list"></div>
+    </section>
+
+</main>
+
+<script src="script.js" defer></script>
+</body>
 </html>
